@@ -73,7 +73,7 @@ model.add(Dense(1))
 # Using the Adam optimizer
 model.compile(loss='mse', optimizer='adam')
 
-# 0% of data will be used for validation
+# 20% of data will be used for validation
 # Training using 3 epochs
 model.fit(X_train, y_train, validation_split=0.2, shuffle=True, nb_epoch=3)
 
